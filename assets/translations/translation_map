@@ -1,0 +1,15 @@
+
+1) Θα πρέπει όλες οι τιμές που είναι να μεταφραστούν να μπουν στο αρχείο
+    json (el.json, en.json.. κτλπ).
+    πχ. el.json { title = 'Γειά σου' }
+        en.json { title = 'Hello' }
+
+2) Αφού περαστούν οι τιμές τότε στο terminal περνάμε την εντολή
+ * flutter pub run easy_localization:generate -S "assets/translations" -O "lib/translations" -o "locale_keys.g.dart" -f keys
+    και αμέσως μετά περνάμε την εντολή
+ * flutter pub run easy_localization:generate -S "assets/translations" -O "lib/translations"
+
+ 3) Αφού ολοκληρωθούν οι εντολές περνάμε τις τιμές αυτές μέσα στον κώδικα που θέλουμε να μεταφραστεί το text
+    σε μορφή => LocaleKeys.την_μεταβλητή_που_βάλαμε.tr(context: context); πχ. LocalKeys.title.tr();
+
+ 4) Αφου τελειώσουμε τις αλλαγές τότε κάνουμε ενα refresh την εφαρμογή για να περαστούν οι τιμές και μέσα στον emulator.

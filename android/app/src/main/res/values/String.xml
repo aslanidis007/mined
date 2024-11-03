@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+    <string name="app_name">mined</string>
+    <string name="facebook_app_id">171169325121850</string>
+    <string name="fb_login_protocol_scheme">fb171169325121850</string>
+    <string name="facebook_client_token">2a81d3b4da8ee2b77e548b6023b07569</string>
+</resources>
